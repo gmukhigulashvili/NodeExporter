@@ -1,0 +1,11 @@
+[Unit]
+Description=Node Exporter
+
+[Service]
+ExecStart=/etc/node-exporter/node_exporter
+StandardOutput=null
+Restart=always
+
+[Install]
+WantedBy=network.target
+Alias=node-exporter.service
